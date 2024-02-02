@@ -35,14 +35,14 @@ while len(wrong_letters) < 8:
        
     if not correct:
         wrong_letters.append(letter)
-       
+
+    print('Word:', " ".join(visible_word))
+    
     if "".join(visible_word) == word:
-        print('Word:', " ".join(visible_word))
         print("You won!")
 
         break
    
-    print('Word:', " ".join(visible_word))
     print('Wrong:', ", ".join(wrong_letters))
 
 if "".join(visible_word) != word:
