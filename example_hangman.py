@@ -21,6 +21,11 @@ while len(wrong_letters) < 8:
         print('You cannot use nonalphabetic characters.')
         
         continue
+
+    if len(input) > 1:
+        print('You cannot guess strings longer than one character.')
+
+       continue
    
     if letter in wrong_letters or letter in visible_word:
         print('You already tried that letter!')
